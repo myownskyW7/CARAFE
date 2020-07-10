@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from mmcv.cnn import UPSAMPLE_LAYERS, normal_init, xavier_init
+from mmcv.cnn import normal_init, xavier_init
 from torch.autograd import Function
 from torch.nn.modules.module import Module
 
