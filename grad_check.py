@@ -1,7 +1,9 @@
 import os.path as osp
 import sys
 
-import mmcv
+import subprocess
+subprocess.call(['pip', 'install', 'cvbase'])
+import cvbase as cvb
 import torch
 from torch.autograd import gradcheck
 
@@ -29,8 +31,8 @@ loop_num = 500
 
 time_forward = 0
 time_backward = 0
-bar = mmcv.ProgressBar(loop_num)
-timer = mmcv.Timer()
+bar = cvb.ProgressBar(loop_num)
+timer = cvb.Timer()
 for i in range(loop_num):
     x = carafe(feat.clone(), mask.clone(), 5, 1, 2)
     torch.cuda.synchronize()
@@ -46,8 +48,8 @@ print(f'\nCARAFE time forward: {forward_speed} '
 
 time_naive_forward = 0
 time_naive_backward = 0
-bar = mmcv.ProgressBar(loop_num)
-timer = mmcv.Timer()
+bar = cvb.ProgressBar(loop_num)
+timer = cvb.Timer()
 for i in range(loop_num):
     x = carafe_naive(feat.clone(), mask.clone(), 5, 1, 2)
     torch.cuda.synchronize()
