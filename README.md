@@ -32,7 +32,7 @@ B. Compile CARAFE by yourself.
 Requirements:
 
 ```
-CUDA >= 9.0, Pytorch >= 1.3
+CUDA >= 9.0, Pytorch >= 1.3, Python >= 3.6
 ```
 
 Git clone this repo.
