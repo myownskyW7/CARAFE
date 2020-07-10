@@ -13,6 +13,9 @@ This Repo is the official CUDA implementation of ICCV 2019 Oral paper for [CARAF
 ```
 
 ## Setup CARAFE
+Requirements:
+
+CUDA >= 9.0, Pytorch >= 1.3
 
 Use CARAFE in your own project.
 

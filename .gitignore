@@ -1,0 +1,4 @@
+*.so
+*.o
+carafe.egg-info/*
+build/*
