@@ -13,11 +13,27 @@ This Repo is the official CUDA implementation of ICCV 2019 Oral paper for [CARAF
 ```
 
 ## Setup CARAFE
+
+There are two ways to setup CARAFE. 
+
+
+A. Install mmcv which contains CARAFE.
+
+CARAFE is supported in mmcv.
+You may install mmcv following the official guideline.
+```
+https://github.com/open-mmlab/mmcv
+```
+
+
+
+B. Compile CARAFE by yourself.
+
 Requirements:
 
+```
 CUDA >= 9.0, Pytorch >= 1.3
-
-Use CARAFE in your own project.
+```
 
 Git clone this repo.
 ```shell
@@ -37,7 +53,7 @@ python grad_check.py
 ```
 
 ## Applications
-Other projects contain CARAFE operators
+Projects with CARAFE operators
 
 [mmcv](https://github.com/open-mmlab/mmcv)
 
