@@ -57,6 +57,6 @@ Projects with CARAFE operators
 
 [mmcv](https://github.com/open-mmlab/mmcv)
 
-[mmediting](https://github.com/open-mmlab/mmediting)
-
 [mmdetection](https://github.com/open-mmlab/mmdetection)
+
+[mmediting](https://github.com/open-mmlab/mmediting)
