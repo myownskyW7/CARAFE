@@ -2,3 +2,4 @@
 *.o
 carafe.egg-info/*
 build/*
+*.pyc
