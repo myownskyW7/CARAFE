@@ -79,7 +79,7 @@ $ python
 ```python
 import torch
 from mmcv.ops.carafe import CARAFEPack
-# or from carafe import CARAFEPack
+# or "from carafe import CARAFEPack"
 
 
 x = torch.rand(2, 40, 50, 70)
