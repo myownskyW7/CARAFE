@@ -47,6 +47,34 @@ $ python
 >>> from carafe import grad_check
 ```
 
+C. Compile CARAFE from source.
+
+Requirements:
+
+```
+CUDA >= 9.0, Pytorch >= 1.3, Python >= 3.6
+```
+
+Git clone this repo.
+```shell
+git clone https://github.com/myownskyW7/CARAFE
+```
+
+Setup CARAFE in your own project.
+```shell
+cp -r ./CARAFE $Your_Project_Path$
+cd $Your_Project_Path$/CARAFE
+python setup.py develop
+# or "pip install -v -e ."
+```
+
+Run gradient check to make sure the operator is successfully compiled
+```
+$ python
+
+>>> from carafe import grad_check
+```
+
 ## Usage
 
 ```python
