@@ -1,4 +1,6 @@
 /* 
+   CARAFE: Content-Aware ReAssembly of FEatures (ICCV 2019)
+   https://arxiv.org/abs/1905.02188
    Writen by https://github.com/myownskyW7.
    All Rights Reserved. 
 */
