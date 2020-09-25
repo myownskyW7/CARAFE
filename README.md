@@ -14,7 +14,7 @@ This Repo is the official CUDA implementation of ICCV 2019 Oral paper for [CARAF
 
 ## Setup CARAFE
 
-There are two ways to setup CARAFE. 
+There are two ways to setup CARAFE.
 
 
 A. Install mmcv which contains CARAFE.
@@ -27,7 +27,7 @@ https://github.com/open-mmlab/mmcv
 
 
 
-B. Compile CARAFE by yourself.
+B. Install CARAFE directly from GitHub.
 
 Requirements:
 
@@ -35,21 +35,34 @@ Requirements:
 CUDA >= 9.0, Pytorch >= 1.3, Python >= 3.6
 ```
 
-Git clone this repo.
+Install with `pip`
 ```shell
-git clone https://github.com/myownskyW7/CARAFE
+pip install git+https://github.com/myownskyW7/CARAFE.git@master
 ```
 
-Setup CARAFE in your own project.
-```shell
-cp -r ./CARAFE $Your_Project_Path$
-cd $Your_Project_Path$/CARAFE
-python setup.py develop
-# or "pip install -v -e ."
-```
 Run gradient check to make sure the operator is successfully compiled
 ```
-python grad_check.py
+$ python
+
+>>> from carafe import grad_check
+```
+
+## Usage
+
+```python
+import torch
+from carafe import CARAFEPack
+
+x = torch.rand(2, 40, 50, 70)
+model = CARAFEPack(channels=40, scale_factor=2)
+
+model = model.cuda()
+x = x.cuda()
+
+out = model(x)
+
+print('original shape: ', x.shape)
+print('upscaled shape: ', out.shape)
 ```
 
 ## Applications
