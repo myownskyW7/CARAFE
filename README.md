@@ -44,7 +44,7 @@ Run gradient check to make sure the operator is successfully compiled
 ```
 $ python
 
->>> from carafe_op import grad_check
+>>> from carafe import grad_check
 ```
 
 C. Compile CARAFE from source.
@@ -71,7 +71,7 @@ Run gradient check to make sure the operator is successfully compiled
 ```
 $ python
 
->>> from carafe_op import grad_check
+>>> from carafe import grad_check
 ```
 
 ## Usage
@@ -79,7 +79,7 @@ $ python
 ```python
 import torch
 from mmcv.ops.carafe import CARAFEPack
-# or from carafe_op import CARAFEPack
+# or from carafe import CARAFEPack
 
 
 x = torch.rand(2, 40, 50, 70)
