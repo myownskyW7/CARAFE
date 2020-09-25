@@ -1,5 +1,5 @@
 *.so
 *.o
 *.pyc
-carafe_op.egg-info/*
+carafe.egg-info/*
 build/*
