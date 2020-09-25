@@ -60,10 +60,9 @@ Git clone this repo.
 git clone https://github.com/myownskyW7/CARAFE
 ```
 
-Setup CARAFE in your own project.
+Setup CARAFE op.
 ```shell
-cp -r ./CARAFE $Your_Project_Path$
-cd $Your_Project_Path$/CARAFE
+cd CARAFE
 python setup.py develop
 # or "pip install -v -e ."
 ```
