@@ -9,15 +9,15 @@ NVCC_ARGS = [
 ]
 
 setup(
-    name='carafe',
+    name='carafe_op',
     version='0.0.1',
     license='MIT',
     ext_modules=[
         CUDAExtension(
             'carafe_ext', [
-                'carafe/src/cuda/carafe_cuda.cpp',
-                'carafe/src/cuda/carafe_cuda_kernel.cu',
-                'carafe/src/carafe_ext.cpp'
+                'carafe_op/src/cuda/carafe_cuda.cpp',
+                'carafe_op/src/cuda/carafe_cuda_kernel.cu',
+                'carafe_op/src/carafe_ext.cpp'
             ],
             define_macros=[('WITH_CUDA', None)],
             extra_compile_args={
@@ -26,9 +26,9 @@ setup(
             }),
         CUDAExtension(
             'carafe_naive_ext', [
-                'carafe/src/cuda/carafe_naive_cuda.cpp',
-                'carafe/src/cuda/carafe_naive_cuda_kernel.cu',
-                'carafe/src/carafe_naive_ext.cpp'
+                'carafe_op/src/cuda/carafe_naive_cuda.cpp',
+                'carafe_op/src/cuda/carafe_naive_cuda_kernel.cu',
+                'carafe_op/src/carafe_naive_ext.cpp'
             ],
             define_macros=[('WITH_CUDA', None)],
             extra_compile_args={

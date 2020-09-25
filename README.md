@@ -12,9 +12,9 @@ This Repo is the official CUDA implementation of ICCV 2019 Oral paper for [CARAF
 }
 ```
 
-## Setup CARAFE
+## Setup CARAFE Operator
 
-There are two ways to setup CARAFE.
+There are two ways to setup CARAFE operator.
 
 
 A. Install mmcv which contains CARAFE.
@@ -44,7 +44,7 @@ Run gradient check to make sure the operator is successfully compiled
 ```
 $ python
 
->>> from carafe import grad_check
+>>> from carafe_op import grad_check
 ```
 
 C. Compile CARAFE from source.
@@ -72,14 +72,16 @@ Run gradient check to make sure the operator is successfully compiled
 ```
 $ python
 
->>> from carafe import grad_check
+>>> from carafe_op import grad_check
 ```
 
 ## Usage
 
 ```python
 import torch
-from carafe import CARAFEPack
+from mmcv.ops.carafe import CARAFEPack
+# or from carafe_op import CARAFEPack
+
 
 x = torch.rand(2, 40, 50, 70)
 model = CARAFEPack(channels=40, scale_factor=2)
