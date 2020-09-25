@@ -36,7 +36,7 @@ setup(
                 'nvcc': NVCC_ARGS
             })
     ],
-    packages=find_packages(exclude=('test',)),
+    packages=find_packages(exclude=('test', )),
     cmdclass={'build_ext': BuildExtension},
     zip_safe=False,
 )
