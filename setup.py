@@ -39,4 +39,5 @@ setup(
     packages=find_packages(exclude=('test', )),
     cmdclass={'build_ext': BuildExtension},
     zip_safe=False,
+    install_requires=['torch'],
 )
