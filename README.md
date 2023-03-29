@@ -37,7 +37,7 @@ CUDA >= 9.0, Pytorch >= 1.3, Python >= 3.6
 
 Install with `pip`
 ```shell
-pip install git+https://github.com/myownskyW7/CARAFE.git@master
+pip install git+https://github.com/zgzhengSEU/CARAFE.git@master
 ```
 
 Run gradient check to make sure the operator is successfully compiled
@@ -57,7 +57,7 @@ CUDA >= 9.0, Pytorch >= 1.3, Python >= 3.6
 
 Git clone this repo.
 ```shell
-git clone https://github.com/myownskyW7/CARAFE
+git clone https://github.com/zgzhengSEU/CARAFE.git
 ```
 
 Setup CARAFE op.
