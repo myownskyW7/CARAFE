@@ -110,6 +110,9 @@ class CARAFEFunction(Function):
         rfeatures = features.new_zeros(features.size(), requires_grad=False)
         rmasks = masks.new_zeros(masks.size(), requires_grad=False)
         if features.is_cuda:
+            if features.type() == 'torch.cuda.HalfTensor':
+                masks = masks.type(torch.half)
+                rmasks = rmasks.type(torch.half)
             carafe_ext.forward(features, rfeatures, masks, rmasks, kernel_size,
                                group_size, scale_factor, routput, output)
         else:
